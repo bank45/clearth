@@ -232,6 +232,7 @@ public class ComparisonProcessor<A, B, C extends PrimaryKey>
 	protected CsvDetailedResult createAndStoreComparisonNestedResult(ContainerResult result, String header,
 			ComparisonRowsConfiguration rowsConfig, ValuesComparator<A, B> valuesComparator, ValueParser<A, B> valueParser)
 	{
+//		init
 		CsvDetailedResult detailedResult = createComparisonNestedResult(header, rowsConfig, valuesComparator, valueParser);
 		result.addDetail(detailedResult);
 		storeComparisonNestedResult(header, detailedResult);
